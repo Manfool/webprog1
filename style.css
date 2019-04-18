@@ -1,0 +1,128 @@
+html, body, h1, h2, h3, ul, li {
+	margin: 0;
+	padding: 0;
+}
+.clear {
+	clear: both;
+}
+body {
+	background: #E0D5B7 url(kepek/header_1.jpg) repeat-y;
+	text-align: center;
+	font: 11px verdana, arial, sans-serif;
+	color: #74653D;
+	padding-bottom: 10px;
+	padding-top: 31px;
+}
+
+/** layout **/
+#wrapper {
+  text-align: left;
+  margin: auto;
+  width: 778px;
+  position: relative;
+  background: url(kepek/body_bg.gif) repeat-y;
+}
+#nav {
+  background: #4B5360;
+  position: absolute;
+  top: 101px;
+  left: 240px;
+  width: 529px;
+  padding: 9px 0;
+  text-align: center;
+}
+#nav li {
+  list-style: none;
+  padding-right: 15px;
+  font-family: cursive;
+  
+  display: inline;
+  color: #fff;
+}
+#nav a {
+  text-decoration: none;
+  color: #fff;
+  
+}
+#left {
+  float: left;
+  width: 243px;
+
+  
+  
+}
+#logo {
+  position: absolute;
+  top: 12px;
+  left: 300px;
+  width: 500px;
+  color: #000000;
+  font-size: xx-large; 
+}
+#logo h1 {
+  font: bold 24px "arial narrow", arial, sans-serif;
+  font-size: xx-large; 
+}
+#logo p {
+  margin: 0;
+  font-weight: bold;
+ 
+
+}
+#nav a:hover {
+  text-decoration: underline;
+  font-size: large;
+ 
+}
+#nav2 {
+  background: url(kepek/news_bg.jpg) repeat-y;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 3px;
+  text-align: justify;
+}
+#nav2 h2 {
+  font-size: 12px;
+  color: #3BB9FF;
+}
+
+#header {
+  background: url(kepek/hat.jpg) no-repeat;
+  height: 175px;
+  
+ 
+  
+}
+#right {
+  float: right;
+  width: 490px;
+  padding-right: 30px;
+  padding-top: 0px;
+  
+}
+
+#footer {
+  background: url(kepek/footer_bg.gif) repeat-y;
+  background-position: center;
+  margin: auto 0;
+}
+#copyright {
+  text-align: center;
+  font-size: 9px;
+  color: #000000;
+  font-weight: bold;
+  margin: auto 0;
+}
+#footerline{
+	background: url(kepek/footerline.gif) no-repeat;
+  background-position: center;
+	height:10px;
+	margin-top:0px;
+	display:block;
+	font-size:1px;
+}
+#gallery{
+	padding: 10px;
+	margin: 10px;
+}
+
