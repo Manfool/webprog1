@@ -1,13 +1,19 @@
 <?php
 session_start();
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // initializing variables
 $username = "";
 $email    = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'registration');
+$db = mysqli_connect('mysql.omega', 'registrationtest', 'Flakon001', 'registrationtest');
+
+
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
@@ -19,8 +25,8 @@ if (isset($_POST['reg_user'])) {
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
-  if (empty($username)) { array_push($errors, "Username is required"); }
-  if (empty($email)) { array_push($errors, "Email is required"); }
+  if (empty($username)) { array_push($errors, "Username is required " . $username); }
+  if (empty($email)) { array_push($errors, "Email is required " . $email); }
   if (empty($password_1)) { array_push($errors, "Password is required"); }
   if ($password_1 != $password_2) {
 	array_push($errors, "The two passwords do not match");
